@@ -34,4 +34,4 @@ jobs:
       - name: Build and push
         run: heroku container:push web
       - name: Deploy
-        run: heroku container:release
+        run: heroku container:release web
