@@ -4,7 +4,11 @@
 name: pr-workflow
 
 on:
-# [to be filled]
+  # [to be filled]
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
 jobs:
   test:
     runs-on: # [to be filled]
@@ -13,3 +17,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Install Node.js
         # [rest to be filled]
+      - name: Run tests
+        uses: actions/checkout@v2
+        with:
+          run: npm test
