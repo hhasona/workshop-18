@@ -1,3 +1,4 @@
+console.log("Createing a cube with length: 5")
 class Cube {
   constructor(length) {
     this.length = length;
