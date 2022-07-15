@@ -36,6 +36,6 @@ jobs:
       - name: Build and push
         env:
           HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
-        run: heroku container:push -a workshop18
+        run: heroku container:push -a workshop18monday
       - name: Deploy
-        run: heroku container:release workshop18
+        run: heroku container:release workshop18monday
