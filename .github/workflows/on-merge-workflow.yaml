@@ -13,7 +13,7 @@ on:
 
 jobs:
   test:
-    runs-on: # [to be filled]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
@@ -21,16 +21,14 @@ jobs:
         # [rest to be filled]
         run: npm i
       - name: Run tests
-        uses: actions/checkout@v2
         run: npm test
 
   build-deploy:
-    runs-on: # [to be filled]
+    runs-on: ubuntu-latest
     steps:
       # [rest to be filled]
       - name: Build
         uses: actions/checkout@v2
         run: npm run build
       - name: Deploy to Heroku
-        uses: actions/checkout@v2
         run: npm run deploy
