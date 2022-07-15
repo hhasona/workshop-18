@@ -29,11 +29,9 @@ jobs:
       # [rest to be filled]
       - name: Build
         uses: actions/checkout@v2
-      - name: heroku login
-        run: heroku login
-      - name: sign into Container Registry
+      - name: Login to Heroku Container registry
         run: heroku container:login
-      - name: push to Container Registry
+      - name: Build and push
         run: heroku container:push web
-      - name: Deploy the changes
-        run: heroku container:release web
+      - name: Deploy
+        run: heroku container:release
