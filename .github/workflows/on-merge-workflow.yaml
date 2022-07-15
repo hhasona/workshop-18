@@ -29,6 +29,8 @@ jobs:
       # [rest to be filled]
       - name: Build
         uses: actions/checkout@v2
+      - name: heroku login
+        run: heroku login
       - name: sign into Container Registry
         run: heroku container:login
       - name: push to Container Registry
