@@ -38,4 +38,4 @@ jobs:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         run: heroku container:push -a workshop18monday web
       - name: Deploy
-        run: heroku container:release workshop18monday web
+        run: heroku container:release -a workshop18monday web
