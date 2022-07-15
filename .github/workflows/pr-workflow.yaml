@@ -8,7 +8,6 @@ on:
   pull_request:
     branches:
       - master
-  workflow_dispatch:
 jobs:
   test:
     runs-on: # [to be filled]
@@ -16,6 +15,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
       - name: Install Node.js
+        run: npm i
         # [rest to be filled]
       - name: Run tests
         uses: actions/checkout@v2

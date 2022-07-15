@@ -19,6 +19,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Install Node.js
         # [rest to be filled]
+        run: npm i
       - name: Run tests
         uses: actions/checkout@v2
         run: npm test
