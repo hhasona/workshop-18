@@ -10,7 +10,7 @@ on:
       - master
 jobs:
   test:
-    runs-on: # [to be filled]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
