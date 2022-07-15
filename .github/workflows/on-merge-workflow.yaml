@@ -21,8 +21,7 @@ jobs:
         # [rest to be filled]
       - name: Run tests
         uses: actions/checkout@v2
-        with:
-          run: npm test
+        run: npm test
 
   build-deploy:
     runs-on: # [to be filled]
@@ -30,9 +29,7 @@ jobs:
       # [rest to be filled]
       - name: Build
         uses: actions/checkout@v2
-        with:
-          run: npm run build
+        run: npm run build
       - name: Deploy to Heroku
         uses: actions/checkout@v2
-        with:
-          run: npm run deploy
+        run: npm run deploy

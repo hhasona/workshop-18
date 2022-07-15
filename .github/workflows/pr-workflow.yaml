@@ -19,5 +19,4 @@ jobs:
         # [rest to be filled]
       - name: Run tests
         uses: actions/checkout@v2
-        with:
-          run: npm test
+        run: npm test
